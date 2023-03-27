@@ -38,7 +38,8 @@ object NumberUtil {
         12,
         35,
         3,
-        26,
+        26
+
 
     )
 }
