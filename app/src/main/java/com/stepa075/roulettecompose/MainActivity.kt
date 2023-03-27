@@ -10,6 +10,8 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.stepa075.roulettecompose.rule_screen.RuleScreen
+import com.stepa075.roulettecompose.ui.theme.GreenBg
 import com.stepa075.roulettecompose.ui.theme.RouletteComposeTheme
 
 class MainActivity : ComponentActivity() {
@@ -20,24 +22,12 @@ class MainActivity : ComponentActivity() {
                 // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colors.background
+                    color = GreenBg
                 ) {
-                    Greeting("Android")
+                    RuleScreen()
                 }
             }
         }
     }
 }
 
-@Composable
-fun Greeting(name: String) {
-    Text(text = "Hello $name!")
-}
-
-@Preview(showBackground = true)
-@Composable
-fun DefaultPreview() {
-    RouletteComposeTheme {
-        Greeting("Android")
-    }
-}
